@@ -35,15 +35,23 @@
                   <el-icon>
                     <Aim />
                   </el-icon>
-                  <span>泵站数据监测</span>
+                  <span>泵组流量数据</span>
                 </template>
               </el-menu-item>
-              <el-menu-item index="/overview2">
+              <el-menu-item index="/pumpOverview">
                 <template #title>
                   <el-icon>
                     <Clock />
                   </el-icon>
-                  <span>泵站数据监测2</span>
+                  <span>泵站数据统计</span>
+                </template>
+              </el-menu-item>
+              <el-menu-item index="/workProportion">
+                <template #title>
+                  <el-icon>
+                    <Clock />
+                  </el-icon>
+                  <span>运行时间统计</span>
                 </template>
               </el-menu-item>
             </el-sub-menu>
@@ -57,7 +65,13 @@
               <el-menu-item index="status">
                 <template #title>
                   <el-icon><View /></el-icon>
-                  <span>设备运行情况</span>
+                  <span>设备实时状态</span>
+                </template>
+              </el-menu-item>
+              <el-menu-item index="trend">
+                <template #title>
+                  <el-icon><View /></el-icon>
+                  <span>设备状态变化</span>
                 </template>
               </el-menu-item>
             </el-sub-menu>

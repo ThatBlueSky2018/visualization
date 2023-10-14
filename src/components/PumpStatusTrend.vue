@@ -1,3 +1,4 @@
+<!--此组件绘制最近12个小时数据变化-->
 <template>
   <div id="status_trend">
     <div id="chart"></div>
@@ -24,7 +25,7 @@ import axios from "axios";
 export default {
   data() {
     return {
-      selectedOption: "frequency",
+      selectedOption: "frequency", //请求参数
       chartData: {
         legend: ["泵站1", "泵站2", "泵站3", "泵站4"],
         xAxis: [],

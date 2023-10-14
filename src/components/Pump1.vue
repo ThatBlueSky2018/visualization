@@ -1,3 +1,4 @@
+<!--此组件绘制泵站1实时状态-->
 <template>
   <div id="pumpStatus1">
     <span style="color: black">泵站1</span>

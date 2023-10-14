@@ -14,8 +14,10 @@
         <Pump4></Pump4>
       </div>
     </div>
-    <div id="status_trend">
-      <StatusTrend></StatusTrend>
+    <div id="status_dis2">
+      <div id="flow_status">
+        <PumpGroupStatus></PumpGroupStatus>
+      </div>
     </div>
   </div>
 </template>
@@ -25,12 +27,12 @@ import Pump1 from "../components/Pump1.vue";
 import Pump2 from "../components/Pump2.vue";
 import Pump3 from "../components/Pump3.vue";
 import Pump4 from "../components/Pump4.vue";
-import StatusTrend from "../components/StatusTrend.vue";
+import PumpGroupStatus from "../components/PumpGroupStatus.vue";
 
 import * as echarts from "echarts";
 
 export default {
-  components: { Pump1, Pump2, Pump3, Pump4, StatusTrend },
+  components: { Pump1, Pump2, Pump3, Pump4, PumpGroupStatus },
 };
 </script>
 
@@ -46,8 +48,17 @@ export default {
   justify-content: space-between;
 }
 
+#status_dis2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 #status_trend {
-  width: 100%;
+  width: 800px;
   height: 60%;
+}
+#flow_status {
+  width: 400px;
 }
 </style>

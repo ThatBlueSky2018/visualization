@@ -4,6 +4,10 @@ import Home from "../views/Home.vue";
 import Login from "../views/Login.vue";
 import Overview from "../views/Overview.vue";
 import Status from "../views/Status.vue";
+import Analysis from "../views/Analysis.vue";
+import StatusTrend from "@/views/StatusTrend.vue";
+import PumpHistoryData from "@/views/PumpHistoryData.vue";
+import WorkPeoportion from "@/views/WorkPeoportion.vue";
 
 const routes = [
   {
@@ -27,9 +31,29 @@ const routes = [
         component: Overview,
       },
       {
+        path: "/pumpOverview",
+        name: "pumpOverview",
+        component: PumpHistoryData,
+      },
+      {
+        path: "/workProportion",
+        name: "workProportion",
+        component: WorkPeoportion,
+      },
+      {
         path: "/status",
         name: "status",
         component: Status,
+      },
+      {
+        path: "/trend",
+        name: "trend",
+        component: StatusTrend,
+      },
+      {
+        path: "/analysis",
+        name: "analysis",
+        component: Analysis,
       },
     ],
   },
