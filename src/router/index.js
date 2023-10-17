@@ -7,7 +7,7 @@ import Status from "../views/Status.vue";
 import Analysis from "../views/Analysis.vue";
 import StatusTrend from "@/views/StatusTrend.vue";
 import PumpHistoryData from "@/views/PumpHistoryData.vue";
-import WorkPeoportion from "@/views/WorkPeoportion.vue";
+import PumpGroupHisData1 from "@/views/PumpGroupHisData1.vue";
 
 const routes = [
   {
@@ -36,9 +36,9 @@ const routes = [
         component: PumpHistoryData,
       },
       {
-        path: "/workProportion",
-        name: "workProportion",
-        component: WorkPeoportion,
+        path: "/groupHis1",
+        name: "groupHis1",
+        component: PumpGroupHisData1,
       },
       {
         path: "/status",

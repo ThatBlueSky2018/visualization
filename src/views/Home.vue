@@ -46,12 +46,12 @@
                   <span>泵站数据统计</span>
                 </template>
               </el-menu-item>
-              <el-menu-item index="/workProportion">
+              <el-menu-item index="/groupHis1">
                 <template #title>
                   <el-icon>
                     <Clock />
                   </el-icon>
-                  <span>运行时间统计</span>
+                  <span>泵组运行数据</span>
                 </template>
               </el-menu-item>
             </el-sub-menu>
