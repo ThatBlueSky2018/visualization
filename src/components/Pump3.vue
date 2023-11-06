@@ -56,7 +56,7 @@ export default {
         }
       );
       axios
-        .get("http://localhost:8000/api/data/pump3_status/")
+        .get("http://localhost/api/data/pump3_status/")
         .then((response) => {
           this.frequency = response.data.frequency;
           this.pressure_difference = response.data.pressure_difference;

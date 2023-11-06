@@ -113,7 +113,7 @@ export default {
         }
       );
       axios
-        .get("http://127.0.0.1:8000/api/data/" + this.request_tail, {
+        .get("http://localhost/api/data/" + this.request_tail, {
           params: {
             time: this.type === "天" ? this.formattedDate : this.weekDateRange, //第一个参数：类型
             pump_id: this.selectedPump, //第二个参数：哪一个泵站

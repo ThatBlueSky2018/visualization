@@ -27,7 +27,7 @@ export default {
         return Promise.reject(error);
       }
     );
-    axios.get("http://localhost:8000/api/data/flow/").then((response) => {
+    axios.get("http://localhost/api/data/flow/").then((response) => {
       run(response.data.data);
     });
 

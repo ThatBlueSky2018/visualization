@@ -107,7 +107,7 @@ export default {
           return;
         } else {
           axios
-            .post("http://127.0.0.1:8000/api/login", {
+            .post("http://localhost/api/login", {
               username: this.loginData.username,
               password: this.loginData.password,
             })

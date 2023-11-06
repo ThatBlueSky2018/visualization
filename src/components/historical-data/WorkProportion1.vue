@@ -132,7 +132,7 @@ export default {
         }
       );
       axios
-        .get("http://127.0.0.1:8000/api/data/" + this.request_tail, {
+        .get("http://localhost/api/data/" + this.request_tail, {
           params: {
             time: this.type === "天" ? this.formattedDate : this.DateRange,
           },

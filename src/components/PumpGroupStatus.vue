@@ -58,7 +58,7 @@ export default {
         }
       );
       axios
-        .get("http://127.0.0.1:8000/api/data/pump_group_status/")
+        .get("http://localhost/api/data/pump_group_status/")
         .then((response) => {
           this.flow1 = response.data.flow_1;
           this.flow2 = response.data.flow_2;

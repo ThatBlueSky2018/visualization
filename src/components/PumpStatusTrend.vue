@@ -53,7 +53,7 @@ export default {
         }
       );
       axios
-        .get("http://localhost:8000/api/data/status_trend/", {
+        .get("http://localhost/api/data/status_trend/", {
           params: {
             field: this.selectedOption,
           },

@@ -46,7 +46,7 @@ export default {
         }
       );
       axios
-        .get("http://127.0.0.1:8000/api/data/bayes_random_forest/")
+        .get("http://localhost/api/data/bayes_random_forest/")
         .then((response) => {
           this.electricity_consumption_1 = response.data[0][0];
           this.electricity_consumption_2 = response.data[0][1];
